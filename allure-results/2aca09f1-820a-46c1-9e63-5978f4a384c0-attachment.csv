@@ -1,0 +1,4 @@
+FirstName	LastName	Country	City	Address	ZipCode	PhoneNumber	PaymentMethod	ExpectedResult
+John	Doe	USA	New York	123 St, NY	10001	1234567890	Cash on Delivery	Success
+Alice	Smith	UK	London	45B Baker St	SW1A 1AA	9876543210	Cheque/Money Order	Success
+John	Doe	USA	NY	123 St	ABC123	XYZ12345	Cash on Delivery	Failure

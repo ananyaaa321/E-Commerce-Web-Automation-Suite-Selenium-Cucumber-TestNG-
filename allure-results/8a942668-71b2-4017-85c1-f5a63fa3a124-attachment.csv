@@ -1,0 +1,4 @@
+Product	FirstName	LastName	Email	Country	City	Address	ZipCode	PhoneNumber	PaymentMethod	ExpectedResult
+Laptop	John	Doe	john@example.com	USA	New York	123 St, NY	10001	1234567890	Cash on Delivery	Success
+Smartphone	Alice	Smith	alice@example.com	UK	London	45B Baker St	SW1A 1AA	9876543210	Cheque/Money Order	Success
+Laptop	John	Doe	john@example.com	USA	NY	123 St	ABC123	XYZ12345	Cash on Delivery	Failure

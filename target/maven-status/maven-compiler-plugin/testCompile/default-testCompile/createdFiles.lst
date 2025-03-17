@@ -1,0 +1,12 @@
+stepdefinition\tc2_register.class
+stepdefinition\tc3_searchCat.class
+stepdefinition\tc7_orderplacement.class
+stepdefinition\tc5_productdetails.class
+Utility\Log4jLogger.class
+Utility\ExtentReportManager.class
+stepdefinition\tc6_shoppingcart.class
+stepdefinition\Hooks.class
+stepdefinition\tc4_HomePageVerification.class
+Utility\CaptureScreenshot.class
+stepdefinition\tc1_login.class
+TestRunner.class

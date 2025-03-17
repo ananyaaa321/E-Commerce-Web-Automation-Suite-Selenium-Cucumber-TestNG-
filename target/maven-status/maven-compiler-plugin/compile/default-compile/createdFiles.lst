@@ -1,0 +1,9 @@
+pageObjects\LogInPage.class
+pageObjects\LandingPage.class
+pageObjects\OrderPlacementPage.class
+pageObjects\SearchResultsPage.class
+pageObjects\ShoppingCartPage.class
+pageObjects\ProductDetailsPage.class
+pageObjects\HomePage.class
+pageObjects\RegistrationPage.class
+pageObjects\SearchPage.class

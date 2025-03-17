@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="348.246" tests="29" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Administrator\seleniumBDD\capstoneProject\target\test-classes;C:\Users\Administrator\seleniumBDD\capstoneProject\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\Administrator\.m2\repository\io\github\bonigarcia\webdrivermanager\4.0.0\webdrivermanager-4.0.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0\httpclient5-5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0\httpcore5-5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0\httpcore5-h2-5.0.jar;C:\Users\Administrator\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\Administrator\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\Administrator\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-java\6.1.1\cucumber-java-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-core\6.1.1\cucumber-core-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin\6.1.1\cucumber-gherkin-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.1.1\cucumber-gherkin-messages-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-expressions\10.2.0\cucumber-expressions-10.2.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\datatable\3.3.1\datatable-3.3.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-plugin\6.1.1\cucumber-plugin-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\docstring\6.1.1\docstring-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\html-formatter\6.0.3\html-formatter-6.0.3.jar;C:\Users\Administrator\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-testng\6.1.1\cucumber-testng-6.1.1.jar;C:\Users\Administrator\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\Administrator\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-1.2-api\2.17.1\log4j-1.2-api-2.17.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-cucumber6-jvm\2.21.0\allure-cucumber6-jvm-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\gherkin\18.0.0\gherkin-18.0.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire17627216878672028679\surefirebooter-20250317081453594_3.jar C:\Users\Administrator\AppData\Local\Temp\surefire17627216878672028679 2025-03-17T08-14-53_352-jvmRun1 surefire-20250317081453594_1tmp surefire_0-20250317081453594_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Administrator\seleniumBDD\capstoneProject\target\test-classes;C:\Users\Administrator\seleniumBDD\capstoneProject\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\Administrator\.m2\repository\io\github\bonigarcia\webdrivermanager\4.0.0\webdrivermanager-4.0.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0\httpclient5-5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0\httpcore5-5.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0\httpcore5-h2-5.0.jar;C:\Users\Administrator\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\Administrator\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\Administrator\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-java\6.1.1\cucumber-java-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-core\6.1.1\cucumber-core-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin\6.1.1\cucumber-gherkin-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.1.1\cucumber-gherkin-messages-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-expressions\10.2.0\cucumber-expressions-10.2.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\datatable\3.3.1\datatable-3.3.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-plugin\6.1.1\cucumber-plugin-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\docstring\6.1.1\docstring-6.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\html-formatter\6.0.3\html-formatter-6.0.3.jar;C:\Users\Administrator\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-testng\6.1.1\cucumber-testng-6.1.1.jar;C:\Users\Administrator\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\Administrator\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-1.2-api\2.17.1\log4j-1.2-api-2.17.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-cucumber6-jvm\2.21.0\allure-cucumber6-jvm-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-java-commons\2.21.0\allure-java-commons-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-model\2.21.0\allure-model-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\gherkin\18.0.0\gherkin-18.0.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-testng\2.21.0\allure-testng-2.21.0.jar;C:\Users\Administrator\.m2\repository\io\qameta\allure\allure-test-filter\2.21.0\allure-test-filter-2.21.0.jar;"/>
+    <property name="allure.results.directory" value="C:\Users\Administrator\seleniumBDD\capstoneProject\target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Administrator\seleniumBDD\capstoneProject"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire17627216878672028679\surefirebooter-20250317081453594_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Administrator\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\Administrator\seleniumBDD\capstoneProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-21\bin;C:\Selenium\Selenium downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Administrator\Downloads\allure-2.21.0\allure-2.21.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Verify product details are displayed correctly&quot;, &quot;Optional[Product Details Validation]&quot;](1)" classname="TestRunner" time="13.839">
+    <system-out><![CDATA[[TestNG] [Warn] MethodInterceptor already set
+
+@test
+Scenario: Verify product details are displayed correctly                                # src/test/resources/features/ProductDetails.feature:8
+2025-03-17 08:15:01 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:15:04 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                       # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "test0123@example.com" and "Test123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "Laptop"                            # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user views the product details                                               # stepdefinition.tc5_productdetails.the_user_views_the_product_details()
+  Then The product title, description, price, and images should be visible              # stepdefinition.tc5_productdetails.the_product_details_should_be_visible()
+2025-03-17 08:15:10 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 17, 2025 8:15:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add product to cart from product details page&quot;, &quot;Optional[Product Details Validation]&quot;](2)" classname="TestRunner" time="11.064">
+    <system-out><![CDATA[
+@test
+Scenario: Add product to cart from product details page                                 # src/test/resources/features/ProductDetails.feature:13
+2025-03-17 08:15:12 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:15:16 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                       # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "test0123@example.com" and "Test123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "Laptop "                           # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Cart"                                                 # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+  Then "14.1-inch Laptop" should be displayed in the shopping cart                      # stepdefinition.tc5_productdetails.product_should_be_displayed_in_cart(java.lang.String)
+2025-03-17 08:15:22 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:15:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add product to wishlist from product details page&quot;, &quot;Optional[Product Details Validation]&quot;](3)" classname="TestRunner" time="20.465">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@class=&apos;button-2 add-to-wishlist-button&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='button-2 add-to-wishlist-button']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.ProductDetailsPage.addToWishlist(ProductDetailsPage.java:88)
+	at stepdefinition.tc5_productdetails.the_user_clicks_on(tc5_productdetails.java:43)
+	at ✽.The user clicks on "Add to Wishlist"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/ProductDetails.feature:20)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='button-2 add-to-wishlist-button']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a90754bd8b619f1f4ee3464b421f90b, findElement {value=//input[@class='button-2 add-to-wishlist-button'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52604/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a90754bd8b619f1f4ee3464b421f90b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageObjects.ProductDetailsPage.addToWishlist(ProductDetailsPage.java:88)
+	at stepdefinition.tc5_productdetails.the_user_clicks_on(tc5_productdetails.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:115)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:131)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:112)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+@test
+Scenario: Add product to wishlist from product details page                             # src/test/resources/features/ProductDetails.feature:18
+2025-03-17 08:15:23 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:15:26 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                       # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "test0123@example.com" and "Test123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "Laptop "                           # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Wishlist"                                             # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='button-2 add-to-wishlist-button']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.ProductDetailsPage.addToWishlist(ProductDetailsPage.java:88)
+	at stepdefinition.tc5_productdetails.the_user_clicks_on(tc5_productdetails.java:43)
+	at ✽.The user clicks on "Add to Wishlist"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/ProductDetails.feature:20)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='button-2 add-to-wishlist-button']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a90754bd8b619f1f4ee3464b421f90b, findElement {value=//input[@class='button-2 add-to-wishlist-button'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52604/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a90754bd8b619f1f4ee3464b421f90b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageObjects.ProductDetailsPage.addToWishlist(ProductDetailsPage.java:88)
+	at stepdefinition.tc5_productdetails.the_user_clicks_on(tc5_productdetails.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:115)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:131)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:112)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+  Then "14.1-inch Laptop" should be displayed in the wishlist                           # stepdefinition.tc5_productdetails.product_should_be_displayed_in_wishlist(java.lang.String)
+2025-03-17 08:15:40 ERROR Log4jLogger:14 - Test Failed: Add product to wishlist from product details page
+Screenshot saved: C:\Users\Administrator\seleniumBDD\capstoneProject\screenshots\Add_product_to_wishlist_from_product_details_page_20250317_081541.png
+2025-03-17 08:15:42 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:15:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify elements on the home page after login&quot;, &quot;Optional[Home Page Verification]&quot;](4)" classname="TestRunner" time="7.358">
+    <system-out><![CDATA[
+@test
+Scenario: Verify elements on the home page after login                                   # src/test/resources/features/homePageVerification.feature:4
+2025-03-17 08:15:44 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:15:47 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                        # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  When User logs in with "test0123@example.com" and "Test123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+Categories section is displayed
+Search bar is displayed
+Header section is displayed
+Footer section is displayed
+  Then The home page elements should be visible                                          # stepdefinition.tc4_HomePageVerification.the_home_page_elements_should_be_visible()
+2025-03-17 08:15:49 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:15:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with credentials from an external data source&quot;, &quot;Optional[User Login]&quot;](5)" classname="TestRunner" time="11.939">
+    <system-out><![CDATA[
+@test
+Scenario: Login with credentials from an external data source # src/test/resources/features/login.feature:4
+2025-03-17 08:15:51 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:15:54 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                             # stepdefinition.tc1_login.userIsOnTheLoginPage()
+Email is test0123@example.com
+Password is Test123
+Email is abc123@gmaill.com
+Password is 
+Row 3 - Missing email or password. 
+Email is invalid@example.com
+Password is wrongpassword
+  When user enters the email and password from the excel file # stepdefinition.tc1_login.user_enters_the_email_and_password_from_the_excel_file()
+  Then user reaches home page or error message is displayed   # stepdefinition.tc1_login.validateLogin()
+2025-03-17 08:16:01 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:15:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Order Placement with different payment methods&quot;, &quot;Optional[Order Placement]&quot;](6)" classname="TestRunner" time="28.74">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Order Placement with different payment methods                                       # src/test/resources/features/orderPlacement.feature:21
+2025-03-17 08:16:03 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:16:06 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                                      # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page                    # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "14.1-inch Laptop"                                 # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Cart"                                                                # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+  And The user clicks on the shopping cart                                                             # stepdefinition.tc6_shoppingcart.the_user_clicks_on_the_shopping_cart()
+  When The user accepts Terms and conditions                                                           # stepdefinition.tc6_shoppingcart.the_user_accepts_terms_and_conditions()
+  And The user clicks on the "Proceed to Checkout" button                                              # stepdefinition.tc6_shoppingcart.user_clicks_button(java.lang.String)
+  And The user enters the billing details "Canada", "London", "45B Baker St", "SW1A 1AA", "9876543210" # stepdefinition.tc7_orderplacement.the_user_enters_the_billing_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And The user selects shipping method "Ground"                                                        # stepdefinition.tc7_orderplacement.user_selects_shipping_method(java.lang.String)
+  And The user selects payment method "Check / Money Order (5.00)"                                     # stepdefinition.tc7_orderplacement.user_selects_payment_method(java.lang.String)
+  And The user confirms the order                                                                      # stepdefinition.tc7_orderplacement.user_confirms_order()
+  Then The order should be "Success"                                                                   # stepdefinition.tc7_orderplacement.the_order_should_be(java.lang.String)
+2025-03-17 08:16:30 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:16:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Order Placement with different payment methods&quot;, &quot;Optional[Order Placement]&quot;](7)" classname="TestRunner" time="25.506">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: shippingoption_0&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: shippingoption_0' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.OrderPlacementPage.selectShippingMethod(OrderPlacementPage.java:115)
+	at stepdefinition.tc7_orderplacement.user_selects_shipping_method(tc7_orderplacement.java:34)
+	at ✽.The user selects shipping method "Ground"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/orderPlacement.feature:15)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#shippingoption_0"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bffebb7184263a771ad71b2f37e3f40, findElement {value=shippingoption_0, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52740/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bffebb7184263a771ad71b2f37e3f40
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageObjects.OrderPlacementPage.selectShippingMethod(OrderPlacementPage.java:115)
+	at stepdefinition.tc7_orderplacement.user_selects_shipping_method(tc7_orderplacement.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:115)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:131)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:112)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+@test
+Scenario Outline: Order Placement with different payment methods                    # src/test/resources/features/orderPlacement.feature:22
+2025-03-17 08:16:32 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:16:35 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "14.1-inch Laptop"              # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Cart"                                             # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+  And The user clicks on the shopping cart                                          # stepdefinition.tc6_shoppingcart.the_user_clicks_on_the_shopping_cart()
+  When The user accepts Terms and conditions                                        # stepdefinition.tc6_shoppingcart.the_user_accepts_terms_and_conditions()
+  And The user clicks on the "Proceed to Checkout" button                           # stepdefinition.tc6_shoppingcart.user_clicks_button(java.lang.String)
+2025-03-17 08:16:44 INFO  Log4jLogger:10 - Invalid billing details provided. Error message displayed 
+  And The user enters the billing details "Canada", "", "", "", ""                  # stepdefinition.tc7_orderplacement.the_user_enters_the_billing_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And The user selects shipping method "Ground"                                     # stepdefinition.tc7_orderplacement.user_selects_shipping_method(java.lang.String)
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.id: shippingoption_0' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.OrderPlacementPage.selectShippingMethod(OrderPlacementPage.java:115)
+	at stepdefinition.tc7_orderplacement.user_selects_shipping_method(tc7_orderplacement.java:34)
+	at ✽.The user selects shipping method "Ground"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/orderPlacement.feature:15)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#shippingoption_0"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bffebb7184263a771ad71b2f37e3f40, findElement {value=shippingoption_0, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52740/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bffebb7184263a771ad71b2f37e3f40
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageObjects.OrderPlacementPage.selectShippingMethod(OrderPlacementPage.java:115)
+	at stepdefinition.tc7_orderplacement.user_selects_shipping_method(tc7_orderplacement.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:63)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:115)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:131)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:112)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+  And The user selects payment method "Cash on Delivery"                            # stepdefinition.tc7_orderplacement.user_selects_payment_method(java.lang.String)
+  And The user confirms the order                                                   # stepdefinition.tc7_orderplacement.user_confirms_order()
+  Then The order should be "Failure"                                                # stepdefinition.tc7_orderplacement.the_order_should_be(java.lang.String)
+2025-03-17 08:16:54 ERROR Log4jLogger:14 - Test Failed: Order Placement with different payment methods
+Screenshot saved: C:\Users\Administrator\seleniumBDD\capstoneProject\screenshots\Order_Placement_with_different_payment_methods_20250317_081655.png
+2025-03-17 08:16:56 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:16:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Order Placement with different payment methods&quot;, &quot;Optional[Order Placement]&quot;](8)" classname="TestRunner" time="28.015">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Order Placement with different payment methods                                    # src/test/resources/features/orderPlacement.feature:23
+2025-03-17 08:16:57 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:17:00 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page                 # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "14.1-inch Laptop"                              # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Cart"                                                             # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+  And The user clicks on the shopping cart                                                          # stepdefinition.tc6_shoppingcart.the_user_clicks_on_the_shopping_cart()
+  When The user accepts Terms and conditions                                                        # stepdefinition.tc6_shoppingcart.the_user_accepts_terms_and_conditions()
+  And The user clicks on the "Proceed to Checkout" button                                           # stepdefinition.tc6_shoppingcart.user_clicks_button(java.lang.String)
+  And The user enters the billing details "Canada", "New York", "123 St, NY", "10001", "1234567890" # stepdefinition.tc7_orderplacement.the_user_enters_the_billing_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And The user selects shipping method "Ground"                                                     # stepdefinition.tc7_orderplacement.user_selects_shipping_method(java.lang.String)
+  And The user selects payment method "Cash on Delivery"                                            # stepdefinition.tc7_orderplacement.user_selects_payment_method(java.lang.String)
+  And The user confirms the order                                                                   # stepdefinition.tc7_orderplacement.user_confirms_order()
+  Then The order should be "Success"                                                                # stepdefinition.tc7_orderplacement.the_order_should_be(java.lang.String)
+2025-03-17 08:17:24 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:16:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Order Placement with different payment methods&quot;, &quot;Optional[Order Placement]&quot;](9)" classname="TestRunner" time="29.919">
+    <failure message="Test Failed: Expected failure, but the order was processed successfully. expected [false] but found [true]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Test Failed: Expected failure, but the order was processed successfully. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at stepdefinition.tc7_orderplacement.the_order_should_be(tc7_orderplacement.java:61)
+	at ✽.The order should be "Failure"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/orderPlacement.feature:18)
+]]></failure>
+    <system-out><![CDATA[
+@test
+Scenario Outline: Order Placement with different payment methods                          # src/test/resources/features/orderPlacement.feature:24
+2025-03-17 08:17:25 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:17:29 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                         # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page       # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user is on the product details page for "14.1-inch Laptop"                    # stepdefinition.tc5_productdetails.the_user_is_on_the_product_details_page(java.lang.String)
+  When The user clicks on "Add to Cart"                                                   # stepdefinition.tc5_productdetails.the_user_clicks_on(java.lang.String)
+  And The user clicks on the shopping cart                                                # stepdefinition.tc6_shoppingcart.the_user_clicks_on_the_shopping_cart()
+  When The user accepts Terms and conditions                                              # stepdefinition.tc6_shoppingcart.the_user_accepts_terms_and_conditions()
+  And The user clicks on the "Proceed to Checkout" button                                 # stepdefinition.tc6_shoppingcart.user_clicks_button(java.lang.String)
+  And The user enters the billing details "Bahrain", "NY", "123 St", "ABC123", "XYZ12345" # stepdefinition.tc7_orderplacement.the_user_enters_the_billing_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And The user selects shipping method "Ground"                                           # stepdefinition.tc7_orderplacement.user_selects_shipping_method(java.lang.String)
+  And The user selects payment method "Cash on Delivery"                                  # stepdefinition.tc7_orderplacement.user_selects_payment_method(java.lang.String)
+  And The user confirms the order                                                         # stepdefinition.tc7_orderplacement.user_confirms_order()
+  Then The order should be "Failure"                                                      # stepdefinition.tc7_orderplacement.the_order_should_be(java.lang.String)
+      java.lang.AssertionError: Test Failed: Expected failure, but the order was processed successfully. expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at stepdefinition.tc7_orderplacement.the_order_should_be(tc7_orderplacement.java:61)
+	at ✽.The order should be "Failure"(file:///C:/Users/Administrator/seleniumBDD/capstoneProject/src/test/resources/features/orderPlacement.feature:18)
+
+2025-03-17 08:17:52 ERROR Log4jLogger:14 - Test Failed: Order Placement with different payment methods
+Screenshot saved: C:\Users\Administrator\seleniumBDD\capstoneProject\screenshots\Order_Placement_with_different_payment_methods_20250317_081753.png
+2025-03-17 08:17:54 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:17:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registers with various details&quot;, &quot;Optional[User Registration on DemoWebShop]&quot;](10)" classname="TestRunner" time="7.575">
+    <system-out><![CDATA[
+@test
+Scenario Outline: User registers with various details                           # src/test/resources/features/register.feature:13
+2025-03-17 08:17:55 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the registration page                                        # stepdefinition.tc2_register.user_is_on_registration_page()
+  When User selects "Male" gender                                               # stepdefinition.tc2_register.user_selects_gender(java.lang.String)
+  And User enters "Jay", "D", "Jayd123@gmall.com", "Test@1234", and "Test@1234" # stepdefinition.tc2_register.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on the Register button                                        # stepdefinition.tc2_register.user_clicks_on_register_button()
+  Then Registration should be "Success"                                         # stepdefinition.tc2_register.registration_should_be(java.lang.String)
+2025-03-17 08:18:01 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:17:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registers with various details&quot;, &quot;Optional[User Registration on DemoWebShop]&quot;](11)" classname="TestRunner" time="7.485">
+    <system-out><![CDATA[
+@test
+Scenario Outline: User registers with various details                             # src/test/resources/features/register.feature:14
+2025-03-17 08:18:03 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the registration page                                          # stepdefinition.tc2_register.user_is_on_registration_page()
+  When User selects "Female" gender                                               # stepdefinition.tc2_register.user_selects_gender(java.lang.String)
+  And User enters "Jane", "Doe", "jannie@gmall.com", "Test@1234", and "Test@1234" # stepdefinition.tc2_register.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on the Register button                                          # stepdefinition.tc2_register.user_clicks_on_register_button()
+  Then Registration should be "Success"                                           # stepdefinition.tc2_register.registration_should_be(java.lang.String)
+2025-03-17 08:18:09 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registers with various details&quot;, &quot;Optional[User Registration on DemoWebShop]&quot;](12)" classname="TestRunner" time="7.942">
+    <system-out><![CDATA[
+@test
+Scenario Outline: User registers with various details                               # src/test/resources/features/register.feature:15
+2025-03-17 08:18:10 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the registration page                                            # stepdefinition.tc2_register.user_is_on_registration_page()
+  When User selects "Male" gender                                                   # stepdefinition.tc2_register.user_selects_gender(java.lang.String)
+  And User enters "Alex", "Smith", "alex@gmaill.com", "Test@1234", and "Test@12345" # stepdefinition.tc2_register.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on the Register button                                            # stepdefinition.tc2_register.user_clicks_on_register_button()
+  Then Registration should be "Failure"                                             # stepdefinition.tc2_register.registration_should_be(java.lang.String)
+2025-03-17 08:18:17 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registers with various details&quot;, &quot;Optional[User Registration on DemoWebShop]&quot;](13)" classname="TestRunner" time="6.512">
+    <system-out><![CDATA[
+@test
+Scenario Outline: User registers with various details                # src/test/resources/features/register.feature:16
+2025-03-17 08:18:18 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the registration page                             # stepdefinition.tc2_register.user_is_on_registration_page()
+  When User selects "Female" gender                                  # stepdefinition.tc2_register.user_selects_gender(java.lang.String)
+  And User enters "", "", "missing@example.com", "Test@1234", and "" # stepdefinition.tc2_register.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on the Register button                             # stepdefinition.tc2_register.user_clicks_on_register_button()
+  Then Registration should be "Failure"                              # stepdefinition.tc2_register.registration_should_be(java.lang.String)
+2025-03-17 08:18:23 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User registers with various details&quot;, &quot;Optional[User Registration on DemoWebShop]&quot;](14)" classname="TestRunner" time="7.245">
+    <system-out><![CDATA[
+@test
+Scenario Outline: User registers with various details                              # src/test/resources/features/register.feature:17
+2025-03-17 08:18:25 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the registration page                                           # stepdefinition.tc2_register.user_is_on_registration_page()
+  When User selects "Male" gender                                                  # stepdefinition.tc2_register.user_selects_gender(java.lang.String)
+  And User enters "John", "Doe", "johnnn@gmaill.com", "Test@1234", and "Test@1234" # stepdefinition.tc2_register.user_enters_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User clicks on the Register button                                           # stepdefinition.tc2_register.user_clicks_on_register_button()
+  Then Registration should be "Failure"                                            # stepdefinition.tc2_register.registration_should_be(java.lang.String)
+2025-03-17 08:18:30 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search for a valid product&quot;, &quot;Optional[Search and Filtering Products]&quot;](15)" classname="TestRunner" time="5.825">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search for a valid product     # src/test/resources/features/search.feature:12
+2025-03-17 08:18:32 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page              # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "Laptop"                # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  Then The relevant products should be displayed # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed()
+2025-03-17 08:18:36 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search for a valid product&quot;, &quot;Optional[Search and Filtering Products]&quot;](16)" classname="TestRunner" time="6.519">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search for a valid product     # src/test/resources/features/search.feature:13
+2025-03-17 08:18:38 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page              # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "Smartphone"            # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  Then The relevant products should be displayed # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed()
+2025-03-17 08:18:43 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search for an invalid product&quot;, &quot;Optional[Search and Filtering Products]&quot;](17)" classname="TestRunner" time="6.071">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search for an invalid product # src/test/resources/features/search.feature:21
+2025-03-17 08:18:45 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page             # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "xyz123"               # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  Then an error message should be displayed     # stepdefinition.tc3_searchCat.an_error_message_should_be_displayed()
+2025-03-17 08:18:49 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search for an invalid product&quot;, &quot;Optional[Search and Filtering Products]&quot;](18)" classname="TestRunner" time="6.302">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search for an invalid product # src/test/resources/features/search.feature:22
+2025-03-17 08:18:51 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page             # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "RandomItem"           # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  Then an error message should be displayed     # stepdefinition.tc3_searchCat.an_error_message_should_be_displayed()
+2025-03-17 08:18:55 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search with sorting options&quot;, &quot;Optional[Search and Filtering Products]&quot;](19)" classname="TestRunner" time="7.458">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search with sorting options                 # src/test/resources/features/search.feature:31
+2025-03-17 08:18:57 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                           # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "phone"                              # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User selects sorting option "Price: Low to High"        # stepdefinition.tc3_searchCat.user_selects_sorting_option(java.lang.String)
+  Then The products should be displayed in the selected order # stepdefinition.tc3_searchCat.the_products_should_be_displayed_in_the_selected_order()
+2025-03-17 08:19:03 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:18:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search with sorting options&quot;, &quot;Optional[Search and Filtering Products]&quot;](20)" classname="TestRunner" time="6.809">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search with sorting options                 # src/test/resources/features/search.feature:32
+2025-03-17 08:19:04 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                           # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "laptop"                             # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User selects sorting option "Price: High to Low"        # stepdefinition.tc3_searchCat.user_selects_sorting_option(java.lang.String)
+  Then The products should be displayed in the selected order # stepdefinition.tc3_searchCat.the_products_should_be_displayed_in_the_selected_order()
+2025-03-17 08:19:09 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search with sorting options&quot;, &quot;Optional[Search and Filtering Products]&quot;](21)" classname="TestRunner" time="6.945">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search with sorting options                 # src/test/resources/features/search.feature:33
+2025-03-17 08:19:11 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                           # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "Laptop"                             # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User selects sorting option "Name: A to Z"              # stepdefinition.tc3_searchCat.user_selects_sorting_option(java.lang.String)
+  Then The products should be displayed in the selected order # stepdefinition.tc3_searchCat.the_products_should_be_displayed_in_the_selected_order()
+2025-03-17 08:19:16 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search with display options&quot;, &quot;Optional[Search and Filtering Products]&quot;](22)" classname="TestRunner" time="7.014">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search with display options                # src/test/resources/features/search.feature:42
+2025-03-17 08:19:18 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                          # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "Laptop"                            # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User selects display option "4"                        # stepdefinition.tc3_searchCat.user_selects_display_option(java.lang.String)
+  Then The relevant products should be displayed accordingly # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed_accordingly()
+2025-03-17 08:19:23 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search with display options&quot;, &quot;Optional[Search and Filtering Products]&quot;](23)" classname="TestRunner" time="7.892">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Search with display options                # src/test/resources/features/search.feature:43
+2025-03-17 08:19:25 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                          # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "phone"                             # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User selects display option "12"                       # stepdefinition.tc3_searchCat.user_selects_display_option(java.lang.String)
+  Then The relevant products should be displayed accordingly # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed_accordingly()
+2025-03-17 08:19:31 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Advanced search with subcategories&quot;, &quot;Optional[Search and Filtering Products]&quot;](24)" classname="TestRunner" time="13.206">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Advanced search with subcategories # src/test/resources/features/search.feature:54
+2025-03-17 08:19:33 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                  # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "Laptop"                    # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User enables advanced search                   # stepdefinition.tc3_searchCat.user_enables_advanced_search()
+  And User enables subcategory search                # stepdefinition.tc3_searchCat.user_enables_subcategory_search()
+  And User clicks the advsearch button               # stepdefinition.tc3_searchCat.user_clicks_advsearch_button()
+  Then The relevant products should be displayed     # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed()
+2025-03-17 08:19:44 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Advanced search with subcategories&quot;, &quot;Optional[Search and Filtering Products]&quot;](25)" classname="TestRunner" time="12.008">
+    <system-out><![CDATA[
+@test
+Scenario Outline: Advanced search with subcategories # src/test/resources/features/search.feature:55
+2025-03-17 08:19:46 INFO  Log4jLogger:10 - Launching browser
+  Given User is on the landing page                  # stepdefinition.tc3_searchCat.user_is_on_the_landing_page()
+  When User searches for "phone"                     # stepdefinition.tc3_searchCat.user_searches_for(java.lang.String)
+  And User enables advanced search                   # stepdefinition.tc3_searchCat.user_enables_advanced_search()
+  And User enables subcategory search                # stepdefinition.tc3_searchCat.user_enables_subcategory_search()
+  And User clicks the advsearch button               # stepdefinition.tc3_searchCat.user_clicks_advsearch_button()
+  Then The relevant products should be displayed     # stepdefinition.tc3_searchCat.the_relevant_products_should_be_displayed()
+2025-03-17 08:19:56 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;View shopping cart&quot;, &quot;Optional[Shopping Cart Functionality]&quot;](26)" classname="TestRunner" time="7.521">
+    <system-out><![CDATA[
+@test
+Scenario: View shopping cart                                                        # src/test/resources/features/shoppingCart.feature:8
+2025-03-17 08:19:58 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:20:01 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  When The user clicks on the shopping cart                                         # stepdefinition.tc6_shoppingcart.the_user_clicks_on_the_shopping_cart()
+  Then The shopping cart page should be displayed                                   # stepdefinition.tc6_shoppingcart.the_shopping_cart_page_should_be_displayed()
+2025-03-17 08:20:04 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:19:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Remove a product from the shopping cart&quot;, &quot;Optional[Shopping Cart Functionality]&quot;](27)" classname="TestRunner" time="12.732">
+    <system-out><![CDATA[
+@test
+Scenario: Remove a product from the shopping cart                                   # src/test/resources/features/shoppingCart.feature:12
+2025-03-17 08:20:06 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:20:09 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user has "14.1-inch Laptop" in the shopping cart with a quantity of "1" # stepdefinition.tc6_shoppingcart.user_has_product_in_cart(java.lang.String,java.lang.String)
+  When The user removes "14.1-inch Laptop "                                         # stepdefinition.tc6_shoppingcart.user_removes_product(java.lang.String)
+  Then "14.1-inch Laptop " should no longer be in the cart                          # stepdefinition.tc6_shoppingcart.product_should_not_be_in_cart(java.lang.String)
+2025-03-17 08:20:17 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:20:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Update product quantity in the cart&quot;, &quot;Optional[Shopping Cart Functionality]&quot;](28)" classname="TestRunner" time="12.789">
+    <system-out><![CDATA[
+@test
+Scenario: Update product quantity in the cart                                       # src/test/resources/features/shoppingCart.feature:17
+2025-03-17 08:20:19 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:20:22 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user has "Smartphone" in the shopping cart with a quantity of "1"       # stepdefinition.tc6_shoppingcart.user_has_product_in_cart(java.lang.String,java.lang.String)
+  When The user changes the quantity to "2" and updates the cart                    # stepdefinition.tc6_shoppingcart.user_updates_product_quantity(java.lang.String)
+  Then The cart should be updated accordingly                                       # stepdefinition.tc6_shoppingcart.the_cart_should_be_updated_accordingly()
+2025-03-17 08:20:29 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:20:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Proceed to checkout&quot;, &quot;Optional[Shopping Cart Functionality]&quot;](29)" classname="TestRunner" time="12.677">
+    <system-out><![CDATA[
+@test
+Scenario: Proceed to checkout                                                       # src/test/resources/features/shoppingCart.feature:22
+2025-03-17 08:20:31 INFO  Log4jLogger:10 - Launching browser
+2025-03-17 08:20:35 INFO  Log4jLogger:10 - User is on login Page
+  Given User is on the login page                                                   # stepdefinition.tc1_login.userIsOnTheLoginPage()
+  And User logs in with "abc123@gmaill.com" and "abc123" and lands on the home page # stepdefinition.tc4_HomePageVerification.user_logs_in_with_credentials_and_lands_on_the_home_page(java.lang.String,java.lang.String)
+  Given The user has "Smartphone" in the shopping cart with a quantity of "2"       # stepdefinition.tc6_shoppingcart.user_has_product_in_cart(java.lang.String,java.lang.String)
+  When The user accepts Terms and conditions                                        # stepdefinition.tc6_shoppingcart.the_user_accepts_terms_and_conditions()
+  And The user clicks on the "Proceed to Checkout" button                           # stepdefinition.tc6_shoppingcart.user_clicks_button(java.lang.String)
+  Then The user should be taken to the checkout page                                # stepdefinition.tc6_shoppingcart.user_should_be_redirected_to_checkout()
+2025-03-17 08:20:42 INFO  Log4jLogger:10 - Browser closed
+]]></system-out>
+    <system-err><![CDATA[Mar 17, 2025 8:20:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
+]]></system-err>
+  </testcase>
+</testsuite>
